@@ -1,0 +1,77 @@
+/*
+Theme Name: Urdu News Theme
+Theme URI: https://example.com
+Author: Your Name
+Author URI: https://yourwebsite.com
+Description: A fast, SEO-optimized RTL Urdu News Channel theme fully compatible with Elementor Free.
+Version: 1.0
+License: GPLv2 or later
+Text Domain: urdu-news
+Tags: rtl-language-support, news, responsive, elementor, urdu, fast, seo
+*/
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Noto Naskh Arabic', 'Jameel Noori Nastaleeq', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.site-header {
+    background-color: #c62828;
+    color: white;
+    padding: 10px 20px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-navigation li {
+    margin-left: 15px;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-navigation a:hover {
+    text-decoration: underline;
+}
+
+.site-main {
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.post-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: #c62828;
+}
