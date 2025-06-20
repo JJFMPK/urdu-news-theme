@@ -75,3 +75,62 @@ body {
 .post-title a:hover {
     color: #c62828;
 }
+.breaking-news-bar {
+    background-color: #c62828;
+    color: white;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.site-branding img {
+    max-height: 80px;
+}
+
+.header-ad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation {
+    background-color: #222;
+}
+
+.main-navigation .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.main-navigation .menu li {
+    margin: 0 15px;
+}
+
+.main-navigation .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+.main-navigation .menu li a:hover {
+    color: #c62828;
+}
+
+.big-banner-ad {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.big-banner-ad img {
+    max-width: 100%;
+    height: auto;
+}
