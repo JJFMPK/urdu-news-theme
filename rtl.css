@@ -1,0 +1,12 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.main-navigation ul {
+    flex-direction: row-reverse;
+}
+
+.widget, .post-meta, .footer {
+    text-align: right;
+}
