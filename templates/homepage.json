@@ -81,6 +81,68 @@
             ]
         },
         {
+            "id": "section_category_news_sports",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_category_heading_sports",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "کھیل کی خبریں (Sports)",
+                        "align": "right"
+                    }
+                },
+                {
+                    "id": "widget_category_posts_sports",
+                    "elType": "widget",
+                    "widgetType": "posts",
+                    "settings": {
+                        "posts_per_page": 6,
+                        "query": {
+                            "source": "category",
+                            "include": ["sports"]
+                        },
+                        "columns": 3
+                    }
+                }
+            ]
+        },
+        {
+            "id": "section_category_news_politics",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_category_heading_politics",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "سیاست کی خبریں (Politics)",
+                        "align": "right"
+                    }
+                },
+                {
+                    "id": "widget_category_posts_politics",
+                    "elType": "widget",
+                    "widgetType": "posts",
+                    "settings": {
+                        "posts_per_page": 6,
+                        "query": {
+                            "source": "category",
+                            "include": ["politics"]
+                        },
+                        "columns": 3
+                    }
+                }
+            ]
+        },
+        {
             "id": "section_recent_news",
             "elType": "section",
             "settings": {
