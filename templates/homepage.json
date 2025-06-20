@@ -1,0 +1,112 @@
+{
+    "title": "Urdu News HomePage",
+    "type": "page",
+    "content": [
+        {
+            "id": "section_breaking_news",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_breaking_news",
+                    "elType": "widget",
+                    "widgetType": "shortcode",
+                    "settings": {
+                        "shortcode": "[ditty_news_ticker id=\"123\"]"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "section_featured_grid",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_featured_heading",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "اہم خبریں (Featured News Grid)",
+                        "align": "right"
+                    }
+                },
+                {
+                    "id": "widget_featured_grid",
+                    "elType": "widget",
+                    "widgetType": "posts",
+                    "settings": {
+                        "posts_per_page": 6,
+                        "query": {
+                            "source": "category",
+                            "include": ["featured"]
+                        },
+                        "columns": 3
+                    }
+                }
+            ]
+        },
+        {
+            "id": "section_featured_slider",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_slider_heading",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "اہم خبریں (Featured News Slider)",
+                        "align": "right"
+                    }
+                },
+                {
+                    "id": "widget_featured_slider",
+                    "elType": "widget",
+                    "widgetType": "eael-post-carousel",
+                    "settings": {
+                        "posts_count": 5,
+                        "post_type": "post",
+                        "post_category": "featured",
+                        "autoplay": "yes",
+                        "autoplay_speed": 3000
+                    }
+                }
+            ]
+        },
+        {
+            "id": "section_recent_news",
+            "elType": "section",
+            "settings": {
+                "structure": "full_width"
+            },
+            "elements": [
+                {
+                    "id": "widget_recent_heading",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                        "title": "تازہ ترین خبریں",
+                        "align": "right"
+                    }
+                },
+                {
+                    "id": "widget_recent_posts",
+                    "elType": "widget",
+                    "widgetType": "posts",
+                    "settings": {
+                        "posts_per_page": 8,
+                        "columns": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "3.10.0"
+}
