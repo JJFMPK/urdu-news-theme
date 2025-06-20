@@ -7,6 +7,6 @@ body {
     flex-direction: row-reverse;
 }
 
-.widget, .post-meta, .footer {
+.widget, .post-meta, .site-footer {
     text-align: right;
 }
