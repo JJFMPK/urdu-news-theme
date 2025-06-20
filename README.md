@@ -2,8 +2,13 @@
 
 ✅ RTL Urdu News Channel WordPress Theme  
 ✅ Elementor Free Compatible  
-✅ SEO Friendly  
+✅ SEO Optimized  
 ✅ Responsive (Mobile Friendly)  
+✅ Breaking News Ticker  
+✅ Featured News Grid + Slider  
+✅ Category-wise News Sections  
+✅ Sidebar Widgets + Ads Support  
+✅ Ready to use & fast loading
 
 ---
 
@@ -17,8 +22,8 @@
 - Elementor Free
 - Ditty News Ticker (for Breaking News)
 - Essential Addons for Elementor (for Post Carousel / Slider)
-- Yoast SEO (for SEO)
-- LiteSpeed Cache (for speed)
+- Yoast SEO (for SEO optimization)
+- LiteSpeed Cache (for performance & lazy load)
 - Smush (for image optimization)
 
 ---
@@ -27,25 +32,47 @@
 
 1️⃣ Go to Elementor → Templates → Import Templates  
 2️⃣ Import → `/templates/homepage.json`  
-3️⃣ Create new Page → Edit with Elementor → Insert Template  
+3️⃣ Create new Page → Edit with Elementor → Insert the Template  
 4️⃣ Set this Page as Home Page (WordPress → Reading → Static Home Page)
 
 ---
 
-## Notes:
+## Features:
 
-✅ Breaking News Bar uses: Ditty News Ticker  
-✅ Featured News uses: Post Grid or Post Carousel  
-✅ For advanced slider: use Essential Addons for Elementor  
-✅ Images use Lazy Load → supported by LiteSpeed Cache + HTML5 lazy
+✅ Breaking News Bar using Ditty News Ticker  
+✅ Top Header: Logo + Banner Ad  
+✅ Navigation Menu  
+✅ Big Banner Ad below Menu  
+✅ Featured News (Grid + Slider)  
+✅ Multiple Categories (Sports, Politics, etc.)  
+✅ Recent News section  
+✅ Sidebar with Ads & Widgets  
+✅ Footer with copyright  
+✅ Responsive & RTL optimized  
+✅ SEO best practices ready  
+✅ Native HTML5 Lazy Load for images  
 
 ---
 
 ## Demo Template:
 
-👉 Ready Template → `/templates/homepage.json`
+👉 Ready Template → `/templates/homepage.json`  
+
+---
+
+## Screenshot:
+
+👉 See `/screenshot.png`
+
+---
+
+## Notes:
+
+✅ For advanced slider → use Essential Addons (Post Carousel)  
+✅ Use "SingleFile" browser extension to generate static HTML demo for GitHub Pages if needed  
 
 ---
 
 © 2025 - Urdu News Theme  
 Made by JJFM Developers  
+Released under GPLv2
