@@ -2,74 +2,75 @@
 
 <main class="site-main container">
 
-    <!-- Featured News -->
-    <section class="featured-news">
-        <h2>اہم خبریں</h2>
-        <div class="posts-grid">
-            <?php
-            $featured = new WP_Query(array(
-                'posts_per_page' => 6,
-                'category_name' => 'featured'
-            ));
-            if ( $featured->have_posts() ) :
-                while ( $featured->have_posts() ) : $featured->the_post(); ?>
-                    <article class="post-item">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('medium'); ?>
-                            <?php endif; ?>
-                            <h3><?php the_title(); ?></h3>
-                        </a>
-                    </article>
-            <?php endwhile; wp_reset_postdata(); endif; ?>
-        </div>
-    </section>
+    <!-- Featured Post -->
+    <?php
+    $featured_post_id = get_field('featured_post_id', 'option');
+    if ( $featured_post_id ) :
+        $featured_post = new WP_Query(array(
+            'p' => $featured_post_id
+        ));
+        if ( $featured_post->have_posts() ) : while ( $featured_post->have_posts() ) : $featured_post->the_post(); ?>
+            <article class="featured-big-post">
+                <?php the_post_thumbnail('large'); ?>
+                <h1><?php the_title(); ?></h1>
+            </article>
+        <?php endwhile; wp_reset_postdata(); endif;
+    endif;
+    ?>
 
-    <!-- Politics News -->
+    <!-- First Block -->
+    <?php
+    $first_cat_id = get_field('first_block_category', 'option');
+    $first_posts = get_field('first_block_posts', 'option');
+    ?>
+    <?php if ( $first_cat_id ) : ?>
     <section class="category-news">
-        <h2>سیاست کی خبریں</h2>
+        <h2><?php echo get_cat_name($first_cat_id); ?></h2>
         <div class="posts-grid">
             <?php
-            $politics = new WP_Query(array(
-                'posts_per_page' => 6,
-                'category_name' => 'politics'
+            $block_query = new WP_Query(array(
+                'posts_per_page' => $first_posts,
+                'cat' => $first_cat_id
             ));
-            if ( $politics->have_posts() ) :
-                while ( $politics->have_posts() ) : $politics->the_post(); ?>
+            if ( $block_query->have_posts() ) :
+                while ( $block_query->have_posts() ) : $block_query->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('medium'); ?>
-                            <?php endif; ?>
+                            <?php the_post_thumbnail('medium'); ?>
                             <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
             <?php endwhile; wp_reset_postdata(); endif; ?>
         </div>
     </section>
+    <?php endif; ?>
 
-    <!-- Sports News -->
+    <!-- Second Block -->
+    <?php
+    $second_cat_id = get_field('second_block_category', 'option');
+    $second_posts = get_field('second_block_posts', 'option');
+    ?>
+    <?php if ( $second_cat_id ) : ?>
     <section class="category-news">
-        <h2>کھیل کی خبریں</h2>
+        <h2><?php echo get_cat_name($second_cat_id); ?></h2>
         <div class="posts-grid">
             <?php
-            $sports = new WP_Query(array(
-                'posts_per_page' => 6,
-                'category_name' => 'sports'
+            $block_query2 = new WP_Query(array(
+                'posts_per_page' => $second_posts,
+                'cat' => $second_cat_id
             ));
-            if ( $sports->have_posts() ) :
-                while ( $sports->have_posts() ) : $sports->the_post(); ?>
+            if ( $block_query2->have_posts() ) :
+                while ( $block_query2->have_posts() ) : $block_query2->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('medium'); ?>
-                            <?php endif; ?>
+                            <?php the_post_thumbnail('medium'); ?>
                             <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
             <?php endwhile; wp_reset_postdata(); endif; ?>
         </div>
     </section>
+    <?php endif; ?>
 
 </main>
 
