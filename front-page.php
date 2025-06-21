@@ -23,7 +23,7 @@
         </div>
     </section>
 
-    <!-- Category Politics -->
+    <!-- Politics News -->
     <section class="category-news">
         <h2>سیاست کی خبریں</h2>
         <div class="posts-grid">
@@ -44,7 +44,7 @@
         </div>
     </section>
 
-    <!-- Category Sports -->
+    <!-- Sports News -->
     <section class="category-news">
         <h2>کھیل کی خبریں</h2>
         <div class="posts-grid">
