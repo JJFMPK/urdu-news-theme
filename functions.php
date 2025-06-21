@@ -1,22 +1,11 @@
 <?php
-/**
- * Urdu News Theme functions and definitions
- */
-
 // Urdu News Theme Setup
 function urdu_news_theme_setup() {
-    // Add support for custom logo
     add_theme_support('custom-logo');
-
-    // Add support for post thumbnails
     add_theme_support('post-thumbnails');
-
-    // Register main menu
     register_nav_menus(array(
         'main-menu' => __('Main Menu', 'urdu-news-theme')
     ));
-
-    // Register sidebar
     register_sidebar(array(
         'name'          => __('Main Sidebar', 'urdu-news-theme'),
         'id'            => 'main-sidebar',
@@ -43,6 +32,8 @@ register_sidebar(array(
     'before_title'  => '',
     'after_title'   => '',
 ));
+
+// ACF Options Page
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
         'page_title'    => 'Theme Options',
