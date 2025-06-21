@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- Breaking News Ticker -->
+<!-- Breaking News Bar -->
 <div class="breaking-news-bar">
     <div class="container">
         <?php echo do_shortcode('[ditty_news_ticker id="123"]'); ?>
@@ -27,8 +27,14 @@
             ?>
         </div>
 
+        <!-- Header Ad -->
         <div class="header-ad">
-            <img src="https://via.placeholder.com/728x90?text=Header+Ad+728x90" alt="Header Ad">
+            <?php if ( is_active_sidebar('header-ad') ) : ?>
+                <?php dynamic_sidebar('header-ad'); ?>
+            <?php else : ?>
+                <!-- Example Ad -->
+                <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
+            <?php endif; ?>
         </div>
     </div>
 
@@ -45,7 +51,7 @@
         </div>
     </nav>
 
-    <!-- Big Banner -->
+    <!-- Big Banner Ad -->
     <div class="container big-banner-ad">
         <img src="https://via.placeholder.com/970x250?text=Big+Banner+Ad" alt="Big Banner Ad">
     </div>
