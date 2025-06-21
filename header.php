@@ -14,12 +14,12 @@
     </div>
 </div>
 
-<!-- Top Header: Logo + Ad -->
+<!-- Header -->
 <header class="site-header">
     <div class="container header-top">
         <div class="site-branding">
             <?php
-            if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+            if ( has_custom_logo() ) {
                 the_custom_logo();
             } else {
                 echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
@@ -28,12 +28,11 @@
         </div>
 
         <div class="header-ad">
-            <!-- Place your ad code here (e.g., Google AdSense or static image) -->
-            <img src="https://via.placeholder.com/728x90?text=Ad+Banner" alt="Ad Banner">
+            <img src="https://via.placeholder.com/728x90?text=Header+Ad+728x90" alt="Header Ad">
         </div>
     </div>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav class="main-navigation">
         <div class="container">
             <?php
@@ -46,8 +45,8 @@
         </div>
     </nav>
 
-    <!-- Below Nav: Big Ad space -->
+    <!-- Big Banner -->
     <div class="container big-banner-ad">
-        <img src="https://via.placeholder.com/970x250?text=Big+Ad+Banner" alt="Big Ad Banner">
+        <img src="https://via.placeholder.com/970x250?text=Big+Banner+Ad" alt="Big Banner Ad">
     </div>
 </header>
