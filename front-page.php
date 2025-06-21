@@ -2,7 +2,7 @@
 
 <main class="site-main container">
 
-    <!-- Featured News Grid -->
+    <!-- Featured News -->
     <section class="featured-news">
         <h2>اہم خبریں</h2>
         <div class="posts-grid">
@@ -15,7 +15,9 @@
                 while ( $featured->have_posts() ) : $featured->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('medium'); ?>
+                            <?php endif; ?>
                             <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
@@ -36,7 +38,9 @@
                 while ( $politics->have_posts() ) : $politics->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('medium'); ?>
+                            <?php endif; ?>
                             <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
@@ -57,7 +61,9 @@
                 while ( $sports->have_posts() ) : $sports->the_post(); ?>
                     <article class="post-item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('medium'); ?>
+                            <?php endif; ?>
                             <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
