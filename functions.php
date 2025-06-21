@@ -33,3 +33,13 @@ function urdu_news_theme_scripts() {
     wp_enqueue_style('urdu-news-theme-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'urdu_news_theme_scripts');
+
+// Header Ad Widget
+register_sidebar(array(
+    'name'          => __('Header Ad', 'urdu-news-theme'),
+    'id'            => 'header-ad',
+    'before_widget' => '<div class="header-widget">',
+    'after_widget'  => '</div>',
+    'before_title'  => '',
+    'after_title'   => '',
+));
