@@ -3,7 +3,7 @@
 <main class="site-main container">
 
     <section class="category-news">
-        <h2><?php single_cat_title(); ?></h2>
+        <h2 class="category-title"><?php single_cat_title(); ?></h2>
 
         <div class="posts-grid">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
