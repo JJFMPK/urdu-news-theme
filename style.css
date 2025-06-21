@@ -214,3 +214,14 @@ body {
     line-height: 1.9;
     color: #222;
 }
+.category-news h2.category-title {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    color: #c62828;
+    border-bottom: 2px solid #c62828;
+    padding-bottom: 5px;
+}
+
+.category-news .posts-grid {
+    margin-top: 20px;
+}
