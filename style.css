@@ -209,3 +209,8 @@ body {
         flex-direction: column;
     }
 }
+.single-content {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    color: #222;
+}
