@@ -4,7 +4,7 @@
 
     <!-- Featured Post -->
     <?php
-    $featured_post_id = get_field('featured_post_id', 'option');
+    $featured_post_id = get_theme_mod('featured_post_id');
     if ( $featured_post_id ) :
         $featured_post = new WP_Query(array(
             'p' => $featured_post_id
@@ -20,8 +20,8 @@
 
     <!-- First Block -->
     <?php
-    $first_cat_id = get_field('first_block_category', 'option');
-    $first_posts = get_field('first_block_posts', 'option');
+    $first_cat_id = get_theme_mod('first_block_category');
+    $first_posts = get_theme_mod('first_block_posts');
     ?>
     <?php if ( $first_cat_id ) : ?>
     <section class="category-news">
@@ -47,8 +47,8 @@
 
     <!-- Second Block -->
     <?php
-    $second_cat_id = get_field('second_block_category', 'option');
-    $second_posts = get_field('second_block_posts', 'option');
+    $second_cat_id = get_theme_mod('second_block_category');
+    $second_posts = get_theme_mod('second_block_posts');
     ?>
     <?php if ( $second_cat_id ) : ?>
     <section class="category-news">
