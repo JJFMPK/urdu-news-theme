@@ -33,11 +33,6 @@ register_sidebar(array(
     'after_title'   => '',
 ));
 
-// Load Kirki Framework
-if ( ! class_exists( 'Kirki' ) ) {
-    include_once( get_template_directory() . '/inc/kirki/kirki.php' );
-}
-
 // Add Theme Options Section
 function urdu_news_theme_customizer_sections( $wp_customize ) {
     $wp_customize->add_section( 'theme_options', array(
