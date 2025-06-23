@@ -2,7 +2,7 @@
 
 <main class="site-main container">
 
-    <!-- Featured Post -->
+    <!-- Featured Post (Big) -->
     <?php
     $featured_post_id = get_theme_mod('featured_post_id');
     if ( $featured_post_id ) :
@@ -10,8 +10,8 @@
             'p' => $featured_post_id
         ));
         if ( $featured_post->have_posts() ) : while ( $featured_post->have_posts() ) : $featured_post->the_post(); ?>
-            <article class="featured-big-post">
-                <?php the_post_thumbnail('large'); ?>
+            <article class="featured-big-post" style="margin-bottom: 40px;">
+                <?php the_post_thumbnail('full'); ?>
                 <h1><?php the_title(); ?></h1>
             </article>
         <?php endwhile; wp_reset_postdata(); endif;
@@ -53,5 +53,4 @@
 
 </main>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
