@@ -97,3 +97,32 @@ Kirki::add_field( 'urdu_news_theme', [
     'default'  => 4,
     'priority' => 50,
 ] );
+// Repeater field for Category Sections
+Kirki::add_field( 'urdu_news_theme', [
+    'type'        => 'repeater',
+    'label'       => esc_html__( 'Category Sections', 'urdu-news-theme' ),
+    'section'     => 'theme_options',
+    'priority'    => 10,
+    'row_label'   => [
+        'type'  => 'text',
+        'value' => esc_html__( 'Category Section', 'urdu-news-theme' ),
+    ],
+    'settings'    => 'category_sections',
+    'fields'      => [
+        'section_name' => [
+            'type'    => 'text',
+            'label'   => esc_html__( 'Section Name', 'urdu-news-theme' ),
+            'default' => '',
+        ],
+        'category_id' => [
+            'type'    => 'number',
+            'label'   => esc_html__( 'Category ID', 'urdu-news-theme' ),
+            'default' => '',
+        ],
+        'posts_count' => [
+            'type'    => 'number',
+            'label'   => esc_html__( 'Posts Count', 'urdu-news-theme' ),
+            'default' => 5,
+        ],
+    ],
+] );
