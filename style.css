@@ -98,21 +98,9 @@ body {
     flex: 3;
 }
 
-.site-sidebar {
-    flex: 1;
-    padding: 20px;
-}
-
-.site-sidebar .widget {
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-}
-
 .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
@@ -152,8 +140,6 @@ body {
     border-bottom: 2px solid #c62828;
     padding-bottom: 5px;
 }
-
-
 
 .single-title {
     font-size: 2rem;
