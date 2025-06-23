@@ -100,7 +100,7 @@ body {
 
 .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
@@ -141,88 +141,15 @@ body {
     padding-bottom: 5px;
 }
 
-.single-title {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #222;
-}
-
-.single-featured-image img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.single-content {
-    font-size: 1.1rem;
-    color: #444;
-}
-
-.site-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.widget-title {
-    font-size: 1.2rem;
-    color: #c62828;
-    margin-bottom: 10px;
-}
-
-/* Fix for WP search form */
-.widget_search input[type="search"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.widget_search input[type="submit"] {
-    background: #c62828;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.widget_search input[type="submit"]:hover {
-    background: #a91e1e;
-}
-
 /* Responsive */
+@media (max-width: 1200px) {
+    .posts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
+    .posts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
-
-    .main-navigation .menu {
-        flex-direction: column;
-    }
-
-    .main-navigation .menu li {
-        margin: 10px 0;
-    }
-
-    .site-main {
-        flex-direction: column;
-    }
-}
-.single-content {
-    font-size: 1.3rem;
-    line-height: 1.9;
-    color: #222;
-}
-.category-news h2.category-title {
-    font-size: 1.8rem;
-    margin: 20px 0 10px;
-    color: #c62828;
-    border-bottom: 2px solid #c62828;
-    padding-bottom: 5px;
-}
-
-.category-news .posts-grid {
-    margin-top: 20px;
 }
