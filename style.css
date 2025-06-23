@@ -117,8 +117,6 @@ body {
     margin: 20px 0;
 }
 
-}
-
 .post-item {
     display: flex;
     flex-direction: column;
@@ -127,7 +125,7 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     transition: all 0.3s;
-    height: 100%; /* Important for grid equal height */
+    height: 100%;
 }
 
 .post-item:hover {
@@ -144,8 +142,17 @@ body {
     font-size: 1rem;
     color: #222;
     margin: 0;
-    flex-grow: 1; /* So title takes space */
+    flex-grow: 1;
 }
+
+.category-news h2 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    color: #c62828;
+    border-bottom: 2px solid #c62828;
+    padding-bottom: 5px;
+}
+
 
 
 .single-title {
