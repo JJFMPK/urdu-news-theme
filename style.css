@@ -120,10 +120,14 @@ body {
 }
 
 .post-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     padding: 10px;
     border: 1px solid #ddd;
     transition: all 0.3s;
+    height: 100%; /* Important for grid equal height */
 }
 
 .post-item:hover {
@@ -137,10 +141,12 @@ body {
 }
 
 .post-item h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #222;
     margin: 0;
+    flex-grow: 1; /* So title takes space */
 }
+
 
 .single-title {
     font-size: 2rem;
