@@ -56,53 +56,14 @@ Kirki::add_field( 'urdu_news_theme', [
     'section'  => 'theme_options',
     'default'  => '',
     'priority' => 10,
-] );
+]);
 
-// First Block Category ID
-Kirki::add_field( 'urdu_news_theme', [
-    'type'     => 'number',
-    'settings' => 'first_block_category',
-    'label'    => __( 'First Block Category ID', 'urdu-news-theme' ),
-    'section'  => 'theme_options',
-    'default'  => '',
-    'priority' => 20,
-] );
-
-// First Block Posts Count
-Kirki::add_field( 'urdu_news_theme', [
-    'type'     => 'number',
-    'settings' => 'first_block_posts',
-    'label'    => __( 'First Block Posts Count', 'urdu-news-theme' ),
-    'section'  => 'theme_options',
-    'default'  => 4,
-    'priority' => 30,
-] );
-
-// Second Block Category ID
-Kirki::add_field( 'urdu_news_theme', [
-    'type'     => 'number',
-    'settings' => 'second_block_category',
-    'label'    => __( 'Second Block Category ID', 'urdu-news-theme' ),
-    'section'  => 'theme_options',
-    'default'  => '',
-    'priority' => 40,
-] );
-
-// Second Block Posts Count
-Kirki::add_field( 'urdu_news_theme', [
-    'type'     => 'number',
-    'settings' => 'second_block_posts',
-    'label'    => __( 'Second Block Posts Count', 'urdu-news-theme' ),
-    'section'  => 'theme_options',
-    'default'  => 4,
-    'priority' => 50,
-] );
 // Repeater field for Category Sections
 Kirki::add_field( 'urdu_news_theme', [
     'type'        => 'repeater',
     'label'       => esc_html__( 'Category Sections', 'urdu-news-theme' ),
     'section'     => 'theme_options',
-    'priority'    => 10,
+    'priority'    => 20,
     'row_label'   => [
         'type'  => 'text',
         'value' => esc_html__( 'Category Section', 'urdu-news-theme' ),
@@ -125,4 +86,4 @@ Kirki::add_field( 'urdu_news_theme', [
             'default' => 5,
         ],
     ],
-] );
+]);
