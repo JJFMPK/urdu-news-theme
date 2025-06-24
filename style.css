@@ -235,3 +235,17 @@ body.single .site-main .single-post {
 body.single .site-main .site-sidebar {
     flex: 1;
 }
+body.single .site-main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+body.single .site-main .single-post {
+    flex: 3;
+}
+
+body.single .site-main aside,
+body.single .site-main .site-sidebar {
+    flex: 1;
+}
