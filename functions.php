@@ -58,7 +58,7 @@ Kirki::add_config( 'urdu_news_theme', array(
     'option_type'   => 'theme_mod',
 ));
 
-// Featured Post ID (optional field — can be used later)
+// Featured Post ID (optional)
 Kirki::add_field( 'urdu_news_theme', [
     'type'     => 'number',
     'settings' => 'featured_post_id',
@@ -107,6 +107,7 @@ Kirki::add_field( 'urdu_news_theme', [
         ],
     ],
 ]);
+
 // Register Recent Posts with Thumbs Widget
 class Urdu_News_Recent_Posts_Thumbs extends WP_Widget {
 
