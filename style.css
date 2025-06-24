@@ -249,3 +249,23 @@ body.single .site-main aside,
 body.single .site-main .site-sidebar {
     flex: 1;
 }
+.site-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.site-branding img {
+    max-height: 80px;
+    padding: 5px 10px;
+}
+.header-ad {
+    text-align: center;
+}
+
+.header-ad img {
+    max-width: 728px;
+    height: auto;
+}
