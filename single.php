@@ -27,3 +27,16 @@
 </main>
 
 <?php get_footer(); ?>
+.single .site-main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.single .site-main .single-post {
+    flex: 3;
+}
+
+.single .site-main .site-sidebar {
+    flex: 1;
+}
