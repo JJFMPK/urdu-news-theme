@@ -56,8 +56,5 @@
     </div>
 <?php endif; ?>
 
-    <!-- Big Banner Ad -->
-    <div class="container big-banner-ad">
-        <img src="https://via.placeholder.com/970x250?text=Big+Banner+Ad" alt="Big Banner Ad">
     </div>
 </header>
