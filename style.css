@@ -269,3 +269,14 @@ body.single .site-main .site-sidebar {
     max-width: 728px;
     height: auto;
 }
+.header-ad {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-ad img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
