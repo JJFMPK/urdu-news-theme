@@ -87,3 +87,12 @@ Kirki::add_field( 'urdu_news_theme', [
         ],
     ],
 ]);
+// Big Banner Ad Widget
+register_sidebar(array(
+    'name'          => __('Big Banner Ad', 'urdu-news-theme'),
+    'id'            => 'big-banner-ad',
+    'before_widget' => '<div class="big-banner-ad">',
+    'after_widget'  => '</div>',
+    'before_title'  => '',
+    'after_title'   => '',
+));
