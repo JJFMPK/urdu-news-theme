@@ -7,6 +7,15 @@
 </head>
 <body <?php body_class(); ?>>
 
+<!-- Top Bar with Date and Time -->
+<div class="top-bar">
+    <div class="container">
+        <div class="date-time">
+            <?php echo date_i18n( 'l, F j, Y - g:i A' ); ?>
+        </div>
+    </div>
+</div>
+
 <!-- Breaking News Bar -->
 <div class="breaking-news-bar">
     <div class="container">
@@ -35,7 +44,6 @@
                 <!-- Example Ad -->
                 <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
             <?php endif; ?>
-
         </div>
     </div>
 
@@ -51,11 +59,10 @@
             ?>
         </div>
     </nav>
-<?php if ( is_active_sidebar('big-banner-ad') ) : ?>
-    <div class="big-banner-ad">
-        <?php dynamic_sidebar('big-banner-ad'); ?>
-    </div>
-<?php endif; ?>
 
-    </div>
+    <?php if ( is_active_sidebar('big-banner-ad') ) : ?>
+        <div class="big-banner-ad">
+            <?php dynamic_sidebar('big-banner-ad'); ?>
+        </div>
+    <?php endif; ?>
 </header>
