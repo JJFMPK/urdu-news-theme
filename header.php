@@ -35,7 +35,6 @@
                 <!-- Example Ad -->
                 <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
             <?php endif; ?>
-            }
 
         </div>
     </div>
