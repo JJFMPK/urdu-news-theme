@@ -310,3 +310,17 @@ body.single .site-main .site-sidebar {
     line-height: 1.8;
     color: #333;
 }
+/* BBC Grid Fix */
+.main-big-post h2 {
+    font-size: 1.6rem;
+}
+
+.main-small-post img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.main-small-post h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
