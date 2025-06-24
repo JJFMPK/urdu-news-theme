@@ -50,6 +50,11 @@
             ?>
         </div>
     </nav>
+<?php if ( is_active_sidebar('big-banner-ad') ) : ?>
+    <div class="big-banner-ad">
+        <?php dynamic_sidebar('big-banner-ad'); ?>
+    </div>
+<?php endif; ?>
 
     <!-- Big Banner Ad -->
     <div class="container big-banner-ad">
