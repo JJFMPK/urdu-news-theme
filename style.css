@@ -27,6 +27,19 @@ body {
     padding: 0 15px;
 }
 
+/* Top Bar with Date and Time */
+.top-bar {
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.top-bar .date-time {
+    text-align: right;
+    padding: 0 15px;
+}
+
 .breaking-news-bar {
     background-color: #c62828;
     color: white;
@@ -47,13 +60,14 @@ body {
     padding: 5px 10px;
 }
 
+/* Header Ad */
 .header-ad {
     text-align: center;
     padding: 10px 0;
 }
 
 .header-ad img {
-    max-width: 728px;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -184,7 +198,7 @@ body {
     margin: 0;
 }
 
-/* Single Page Fix - Sidebar on Right */
+/* Single Page - Sidebar Right */
 body.single .site-main {
     display: flex;
     flex-direction: row-reverse;
@@ -198,6 +212,35 @@ body.single .site-main .single-post {
 body.single .site-main aside,
 body.single .site-main .site-sidebar {
     flex: 1;
+}
+
+/* Sidebar Recent Posts with Thumbnails */
+.recent-posts-with-thumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-posts-with-thumbs .recent-post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.recent-posts-with-thumbs .recent-post-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+}
+
+.recent-posts-with-thumbs .recent-post-item span {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
 }
 
 /* Footer */
@@ -239,29 +282,4 @@ body.single .site-main .site-sidebar {
     body.single .site-main {
         flex-direction: column;
     }
-}
-.recent-posts-with-thumbs {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.recent-posts-with-thumbs li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.recent-posts-with-thumbs li img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-left: 10px;
-    border: 1px solid #ddd;
-}
-
-.recent-posts-with-thumbs li span {
-    flex-grow: 1;
-    font-size: 0.9rem;
-    color: #222;
 }
