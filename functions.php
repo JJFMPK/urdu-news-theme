@@ -33,6 +33,16 @@ register_sidebar(array(
     'after_title'   => '',
 ));
 
+// Big Banner Ad Widget
+register_sidebar(array(
+    'name'          => __('Big Banner Ad', 'urdu-news-theme'),
+    'id'            => 'big-banner-ad',
+    'before_widget' => '<div class="big-banner-ad">',
+    'after_widget'  => '</div>',
+    'before_title'  => '',
+    'after_title'   => '',
+));
+
 // Add Theme Options Section
 function urdu_news_theme_customizer_sections( $wp_customize ) {
     $wp_customize->add_section( 'theme_options', array(
@@ -46,9 +56,9 @@ add_action( 'customize_register', 'urdu_news_theme_customizer_sections' );
 Kirki::add_config( 'urdu_news_theme', array(
     'capability'    => 'edit_theme_options',
     'option_type'   => 'theme_mod',
-) );
+));
 
-// Featured Post ID
+// Featured Post ID (optional field — can be used later)
 Kirki::add_field( 'urdu_news_theme', [
     'type'     => 'number',
     'settings' => 'featured_post_id',
@@ -56,6 +66,16 @@ Kirki::add_field( 'urdu_news_theme', [
     'section'  => 'theme_options',
     'default'  => '',
     'priority' => 10,
+]);
+
+// Main Section Category (for front-page main block)
+Kirki::add_field( 'urdu_news_theme', [
+    'type'        => 'select',
+    'settings'    => 'main_section_category',
+    'label'       => esc_html__( 'Main Section Category', 'urdu-news-theme' ),
+    'section'     => 'theme_options',
+    'priority'    => 5,
+    'choices'     => wp_list_pluck( get_categories( array( 'hide_empty' => false ) ), 'name', 'term_id' ),
 ]);
 
 // Repeater field for Category Sections
@@ -86,22 +106,4 @@ Kirki::add_field( 'urdu_news_theme', [
             'default' => 5,
         ],
     ],
-]);
-// Big Banner Ad Widget
-register_sidebar(array(
-    'name'          => __('Big Banner Ad', 'urdu-news-theme'),
-    'id'            => 'big-banner-ad',
-    'before_widget' => '<div class="big-banner-ad">',
-    'after_widget'  => '</div>',
-    'before_title'  => '',
-    'after_title'   => '',
-));
-// Add Main Section Category Option to Customizer
-Kirki::add_field( 'urdu_news_theme', [
-    'type'        => 'select',
-    'settings'    => 'main_section_category',
-    'label'       => esc_html__( 'Main Section Category', 'urdu-news-theme' ),
-    'section'     => 'theme_options',
-    'priority'    => 5,
-    'choices'     => wp_list_pluck( get_categories( array( 'hide_empty' => false ) ), 'name', 'term_id' ),
 ]);
