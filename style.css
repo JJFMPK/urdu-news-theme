@@ -283,3 +283,30 @@ body.single .site-main .site-sidebar {
         flex-direction: column;
     }
 }
+.single-header {
+    margin-bottom: 20px;
+}
+
+.single-title {
+    font-size: 2rem;
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.single-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.single-featured-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.single-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
