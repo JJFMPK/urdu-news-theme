@@ -35,6 +35,19 @@
                 <!-- Example Ad -->
                 <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
             <?php endif; ?>
+.header-ad {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-ad img {
+    width: auto;
+    max-width: 728px;
+    height: auto;
+    display: inline-block;
+}
+
         </div>
     </div>
 
