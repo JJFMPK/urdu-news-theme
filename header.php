@@ -11,7 +11,7 @@
 <div class="top-bar">
     <div class="container">
         <div class="date-time">
-            <?php echo date_i18n( 'l, F j, Y - g:i A' ); ?>
+            <?php echo date_i18n( 'l, j F Y - g:i A' ); ?>
         </div>
     </div>
 </div>
@@ -26,6 +26,8 @@
 <!-- Header -->
 <header class="site-header">
     <div class="container header-top">
+
+        <!-- Logo -->
         <div class="site-branding">
             <?php
             if ( has_custom_logo() ) {
@@ -41,13 +43,12 @@
             <?php if ( is_active_sidebar('header-ad') ) : ?>
                 <?php dynamic_sidebar('header-ad'); ?>
             <?php else : ?>
-                <!-- Example Ad -->
                 <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
             <?php endif; ?>
         </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Main Navigation -->
     <nav class="main-navigation">
         <div class="container">
             <?php
@@ -60,6 +61,7 @@
         </div>
     </nav>
 
+    <!-- Big Banner Ad (optional) -->
     <?php if ( is_active_sidebar('big-banner-ad') ) : ?>
         <div class="big-banner-ad">
             <?php dynamic_sidebar('big-banner-ad'); ?>
