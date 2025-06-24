@@ -240,3 +240,28 @@ body.single .site-main .site-sidebar {
         flex-direction: column;
     }
 }
+.recent-posts-with-thumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-posts-with-thumbs li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recent-posts-with-thumbs li img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+}
+
+.recent-posts-with-thumbs li span {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #222;
+}
