@@ -324,3 +324,20 @@ body.single .site-main .site-sidebar {
     font-size: 1rem;
     line-height: 1.4;
 }
+.recent-posts-with-thumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-posts-with-thumbs li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recent-posts-with-thumbs li .recent-post-title {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #222;
+}
