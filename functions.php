@@ -96,3 +96,12 @@ register_sidebar(array(
     'before_title'  => '',
     'after_title'   => '',
 ));
+// Add Main Section Category Option to Customizer
+Kirki::add_field( 'urdu_news_theme', [
+    'type'        => 'select',
+    'settings'    => 'main_section_category',
+    'label'       => esc_html__( 'Main Section Category', 'urdu-news-theme' ),
+    'section'     => 'theme_options',
+    'priority'    => 5,
+    'choices'     => wp_list_pluck( get_categories( array( 'hide_empty' => false ) ), 'name', 'term_id' ),
+]);
