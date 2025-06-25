@@ -2,12 +2,12 @@
 
 <main class="site-main container">
 
-    <!-- BBC Style Main Block: 1 Big + 4 Small -->
+    <!-- BBC Style Main Block: 1 Big + 3 Small -->
     <?php
     $main_cat_id = get_theme_mod( 'main_grid_category_id', 1 );
 
     $main_block_query = new WP_Query(array(
-        'posts_per_page' => 5, // 1 big + 4 small
+        'posts_per_page' => 4, // 1 big + 3 small
         'cat' => $main_cat_id
     ));
     if ( $main_block_query->have_posts() ) :
