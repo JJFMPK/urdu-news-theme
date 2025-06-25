@@ -2,12 +2,12 @@
 
 <main class="site-main container">
 
-    <!-- BBC Style Main Block: 1 Big + 3 Small -->
+    <!-- BBC Style Main Block: 1 Big + 4 Small -->
     <?php
     $main_cat_id = get_theme_mod( 'main_grid_category_id', 1 );
 
     $main_block_query = new WP_Query(array(
-        'posts_per_page' => 4, // 1 big + 3 small
+        'posts_per_page' => 5, // 1 big + 4 small
         'cat' => $main_cat_id
     ));
     if ( $main_block_query->have_posts() ) :
@@ -25,7 +25,7 @@
                             } else {
                                 echo '<img src="https://via.placeholder.com/600x400?text=No+Image" alt="No image">';
                             } ?>
-                            <h2><?php the_title(); ?></h2>
+                            <h3><?php the_title(); ?></h3>
                         </a>
                     </article>
                 <?php else : ?>
