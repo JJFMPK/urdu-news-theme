@@ -7,11 +7,14 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- Top Bar with Date and Time -->
+<!-- Top Bar with Time & Date -->
 <div class="top-bar">
     <div class="container">
-        <div class="date-time">
-            <?php echo date_i18n( 'l, j F Y - g:i A' ); ?>
+        <div class="top-date-time">
+            <?php
+            date_default_timezone_set('Asia/Karachi');
+            echo date_i18n('l, j F Y | g:i A');
+            ?>
         </div>
     </div>
 </div>
@@ -26,8 +29,6 @@
 <!-- Header -->
 <header class="site-header">
     <div class="container header-top">
-
-        <!-- Logo -->
         <div class="site-branding">
             <?php
             if ( has_custom_logo() ) {
@@ -43,12 +44,13 @@
             <?php if ( is_active_sidebar('header-ad') ) : ?>
                 <?php dynamic_sidebar('header-ad'); ?>
             <?php else : ?>
-                <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Ad">
+                <!-- Placeholder -->
+                <img src="https://via.placeholder.com/728x90?text=Ad+Banner" alt="Header Ad">
             <?php endif; ?>
         </div>
     </div>
 
-    <!-- Main Navigation -->
+    <!-- Navigation -->
     <nav class="main-navigation">
         <div class="container">
             <?php
@@ -63,8 +65,10 @@
 
     <!-- Big Banner Ad (optional) -->
     <?php if ( is_active_sidebar('big-banner-ad') ) : ?>
-        <div class="big-banner-ad">
-            <?php dynamic_sidebar('big-banner-ad'); ?>
+        <div class="container">
+            <div class="big-banner-ad">
+                <?php dynamic_sidebar('big-banner-ad'); ?>
+            </div>
         </div>
     <?php endif; ?>
 </header>
